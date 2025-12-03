@@ -90,13 +90,10 @@ config.json
 *.db
 *.sqlite
 *.sqlite3
-data/*
+data/**/*
 !data/README.md
-!data/references/
-!data/cache/
-output/*
+output/**/*
 !output/README.md
-!output/backups/
 *.log
 
 # Temporary files

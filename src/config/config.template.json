@@ -4,7 +4,7 @@
   "description": "AI小说写作插件 - 支持百万字级别记忆管理",
   "ai_model": {
     "default_provider": "openai",
-    "api_key": "YOUR_API_KEY_HERE",
+    "api_key": "sk-REPLACE_WITH_YOUR_API_KEY",
     "model": "gpt-4",
     "temperature": 0.7,
     "max_tokens": 2000

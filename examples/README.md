@@ -14,6 +14,7 @@
 
 ```python
 # 这是一个伪代码示例，实际实现需要根据项目语言调整
+# This is pseudo-code example, actual implementation needs to be adjusted based on project language
 
 from waqupin import NovelWriter
 
