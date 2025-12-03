@@ -52,3 +52,54 @@ m4/lt~obsolete.m4
 # can automatically generate from config.status script
 # (which is called by configure script))
 Makefile
+
+# Waqupin specific ignores
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project specific
+config.json
+*.db
+*.sqlite
+*.sqlite3
+data/*
+!data/README.md
+!data/references/
+!data/cache/
+output/*
+!output/README.md
+!output/backups/
+*.log
+
+# Temporary files
+*.tmp
+.cache/
+tmp/
