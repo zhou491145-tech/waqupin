@@ -1,0 +1,182 @@
+{
+  "name": "ai-novel-writing-system",
+  "displayName": "AI小说创作辅助系统",
+  "description": "AI辅助小说创作工具，支持章节生成、精修、风格模板、世界观设定、大纲管理等功能",
+  "version": "4.0.1",
+  "prerelease": true,
+  "publisher": "zhou491145",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhou491145/ai-novel-writing-assistant"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onStartupFinished",
+    "onView:aiNovelAssistant.navigator",
+    "onView:novelAssistant.activation",
+    "onView:novelAssistant.refining",
+    "onCommand:novelAssistant.*"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "novelAssistant-sidebar",
+          "title": "AI小说创作辅助系统",
+          "icon": "$(book)"
+        }
+      ]
+    },
+    "views": {
+      "novelAssistant-sidebar": [
+        {
+          "type": "webview",
+          "id": "aiNovelAssistant.navigator",
+          "name": "📚 导航控制台"
+        },
+        {
+          "type": "webview",
+          "id": "novelAssistant.activation",
+          "name": "🔐 激活验证"
+        },
+        {
+          "type": "webview",
+          "id": "novelAssistant.refining",
+          "name": "✨ 文章精修"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "novelAssistant.openWorldSetting",
+        "title": "AI创作系统：打开世界观设定"
+      },
+      {
+        "command": "novelAssistant.openOutline",
+        "title": "AI创作系统：打开大纲管理"
+      },
+      {
+        "command": "novelAssistant.openSummary",
+        "title": "AI创作系统：打开章节摘要"
+      },
+      {
+        "command": "novelAssistant.openProjectConfig",
+        "title": "AI创作系统：打开项目配置"
+      },
+      {
+        "command": "novelAssistant.openWritingStyles",
+        "title": "AI创作系统：打开写作风格"
+      },
+      {
+        "command": "novelAssistant.testApi",
+        "title": "AI创作系统：测试 API 连接"
+      },
+      {
+        "command": "novelAssistant.generateChapter",
+        "title": "AI创作系统：生成章节"
+      },
+      {
+        "command": "novelAssistant.analyzeChapter",
+        "title": "AI创作系统：分析当前章节"
+      },
+      {
+        "command": "novelAssistant.showForeshadows",
+        "title": "AI创作系统：查看伏笔列表"
+      },
+      {
+        "command": "novelAssistant.editForeshadow",
+        "title": "AI创作系统：编辑伏笔"
+      },
+      {
+        "command": "novelAssistant.showRelationshipGraph",
+        "title": "AI创作系统：查看角色关系图谱"
+      },
+      {
+        "command": "novelAssistant.showSummaries",
+        "title": "AI创作系统：查看章节摘要列表"
+      },
+      {
+        "command": "novelAssistant.showCharacterDetail",
+        "title": "AI创作系统：查看角色详情"
+      },
+      {
+        "command": "novelAssistant.editCharacter",
+        "title": "AI创作系统：编辑角色"
+      },
+      {
+        "command": "novelAssistant.importDocument",
+        "title": "AI创作系统：导入文档"
+      },
+      {
+        "command": "novelAssistant.importFolder",
+        "title": "AI创作系统：批量导入文件夹"
+      },
+      {
+        "command": "novelAssistant.showOutlines",
+        "title": "AI创作系统：查看大纲列表"
+      },
+      {
+        "command": "novelAssistant.showActivationPanel",
+        "title": "AI创作系统：显示激活验证面板"
+      }
+    ],
+    "configuration": {
+      "title": "小说创作助手配置",
+      "properties": {
+        "novelAssistant.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "外部 AI 服务的 API Key（例如 miniMax / OpenAI 等）"
+        },
+        "novelAssistant.apiBase": {
+          "type": "string",
+          "default": "",
+          "description": "外部 AI 服务的基础 URL（例如：https://api.minimax.chat/v1）"
+        },
+        "novelAssistant.model": {
+          "type": "string",
+          "default": "",
+          "description": "使用的模型名称（由对应服务提供）"
+        },
+        "novelAssistant.authUrl": {
+          "type": "string",
+          "default": "",
+          "description": "验证服务器地址（例如：https://your-domain.com/api/license）"
+        },
+        "novelAssistant.requireOnlineLicense": {
+          "type": "boolean",
+          "default": true,
+          "description": "是否强制使用联网授权验证（发布版建议开启；开启后不会回退离线机器码验证）"
+        },
+        "novelAssistant.allowLegacyOfflineLicense": {
+          "type": "boolean",
+          "default": false,
+          "description": "是否兼容旧版离线机器码激活（仅用于历史用户迁移/应急，不建议开启）"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "pngjs": "^7.0.0"
+  },
+  "galleryBanner": {
+    "color": "#0a84ff"
+  }
+}

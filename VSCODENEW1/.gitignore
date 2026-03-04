@@ -1,0 +1,51 @@
+# ============= 插件配置和用户数据 =============
+# 插件配置（包含缓存和激活信息，不应提交）
+.插件配置/
+
+# 临时上下文文件（自动生成，无需版本控制）
+.创作上下文/
+
+# 导出文件（可选，根据需要决定是否提交）
+📦 导出/
+
+# ============= 安全：敏感信息不提交 =============
+# 环境变量文件（如果将来使用）
+.env
+.env.local
+.env.*.local
+
+# VS Code用户设置（包含个人API Key）
+.vscode/settings.json
+.vscode/launch.json
+
+# 本地测试配置
+local.config.json
+test.config.json
+development.config.json
+
+# ============= 构建输出 =============
+# 编译输出（在CI/CD中重新生成）
+out/
+dist/
+build/
+
+# 包管理
+node_modules/
+package-lock.json
+yarn.lock
+
+# ============= 日志和临时文件 =============
+*.log
+*.tmp
+*.temp
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# ============= 编辑器和IDE配置 =============
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

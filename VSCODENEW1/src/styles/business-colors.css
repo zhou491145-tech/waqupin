@@ -1,0 +1,115 @@
+/* ============================================
+   业务色彩系统
+   Business Color System
+   ============================================ */
+
+/* === MBTI 性格色彩 === */
+/* MBTI Personality Colors */
+:root {
+  --mbti-intj: #9b59b6;    /* INTJ - 建筑师 - 紫色 */
+  --mbti-intp: #3498db;    /* INTP - 逻辑学家 - 蓝色 */
+  --mbti-entj: #e74c3c;    /* ENTJ - 指挥官 - 红色 */
+  --mbti-entp: #e67e22;    /* ENTP - 辩论家 - 橙色 */
+  --mbti-infj: #27ae60;    /* INFJ - 提倡者 - 绿色 */
+  --mbti-infp: #f1c40f;    /* INFP - 调停者 - 黄色 */
+  --mbti-enfj: #e91e63;    /* ENFJ - 主人公 - 粉红 */
+  --mbti-enfp: #ff9800;    /* ENFP - 竞选者 - 橙黄 */
+  --mbti-istj: #00bcd4;    /* ISTJ - 物流师 - 青色 */
+  --mbti-isfj: #9e9e9e;    /* ISFJ - 守卫者 - 灰色 */
+  --mbti-estj: #607d8b;    /* ESTJ - 总经理 - 蓝灰 */
+  --mbti-esfj: #795548;    /* ESFJ - 执政官 - 棕色 */
+  --mbti-istp: #212121;    /* ISTP - 鉴赏家 - 黑色 */
+  --mbti-isfp: #8d6e63;    /* ISFP - 探险家 - 浅棕 */
+  --mbti-estp: #c62828;    /* ESTP - 企业家 - 深红 */
+  --mbti-esfp: #ef6c00;    /* ESFP - 表演者 - 深橙 */
+}
+
+/* === 角色类型色彩 === */
+/* Character Role Colors */
+:root {
+  --role-protagonist: #e74c3c;    /* 主角 - 红色 */
+  --role-antagonist: #9b59b6;    /* 反派 - 紫色 */
+  --role-supporting: #3498db;     /* 配角 - 蓝色 */
+  --role-minor: #95a5a6;          /* 次要角色 - 灰色 */
+}
+
+/* === 伏笔状态色彩 === */
+/* Foreshadow Status Colors */
+:root {
+  --foreshadow-pending: #f39c12;     /* 待回收 - 橙色 */
+  --foreshadow-resolved: #27ae60;   /* 已回收 - 绿色 */
+  --foreshadow-abandoned: #e74c3c;  /* 已废弃 - 红色 */
+}
+
+/* === 伏笔重要性色彩 === */
+/* Foreshadow Importance Colors */
+:root {
+  --importance-high: #e74c3c;     /* 高 - 红色 */
+  --importance-medium: #f39c12;   /* 中 - 橙色 */
+  --importance-low: #27ae60;      /* 低 - 绿色 */
+}
+
+/* === 模块主题色 === */
+/* Module Theme Colors */
+:root {
+  /* 创作中心模块 */
+  --module-creation-primary: #6366f1;
+  --module-creation-secondary: #8b5cf6;
+
+  /* 核心管理模块 */
+  --module-core-primary: #ec4899;
+  --module-core-secondary: #f472b6;
+
+  /* 项目数据模块 */
+  --module-data-primary: #10b981;
+  --module-data-secondary: #34d399;
+
+  /* 配置模块 */
+  --module-config-primary: #f59e0b;
+  --module-config-secondary: #fbbf24;
+
+  /* 导航模块 */
+  --module-nav-primary: #3b82f6;
+  --module-nav-secondary: #60a5fa;
+}
+
+/* === 语义化色彩 === */
+/* Semantic Colors */
+:root {
+  /* 新建/创建 */
+  --semantic-create: var(--color-primary);
+  --semantic-create-hover: var(--color-primary-dark);
+
+  /* 编辑/修改 */
+  --semantic-edit: var(--color-info);
+  --semantic-edit-hover: var(--color-info-dark);
+
+  /* 删除/移除 */
+  --semantic-delete: var(--color-error);
+  --semantic-delete-hover: var(--color-error-dark);
+
+  /* 保存/确认 */
+  --semantic-save: var(--color-success);
+  --semantic-save-hover: var(--color-success-dark);
+
+  /* 取消/关闭 */
+  --semantic-cancel: var(--text-secondary);
+  --semantic-cancel-hover: var(--text-tertiary);
+}
+
+/* === 状态指示器色彩 === */
+/* Status Indicator Colors */
+:root {
+  /* 状态色 */
+  --status-active: var(--color-success);
+  --status-inactive: var(--text-disabled);
+  --status-loading: var(--color-info);
+  --status-error: var(--color-error);
+  --status-warning: var(--color-warning);
+
+  /* 状态渐变 */
+  --status-gradient-success: linear-gradient(135deg, var(--color-success-400) 0%, var(--color-success-600) 100%);
+  --status-gradient-warning: linear-gradient(135deg, var(--color-warning-400) 0%, var(--color-warning-600) 100%);
+  --status-gradient-error: linear-gradient(135deg, var(--color-error-400) 0%, var(--color-error-600) 100%);
+  --status-gradient-info: linear-gradient(135deg, var(--color-info-400) 0%, var(--color-info-600) 100%);
+}

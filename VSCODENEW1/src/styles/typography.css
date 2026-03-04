@@ -1,0 +1,91 @@
+/* ============================================
+   字体系统
+   Typography System
+   ============================================ */
+
+:root {
+  /* === 字体家族 === */
+  /* Font Family */
+  --font-family-sans: 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', monospace;
+  --font-family-serif: 'Georgia', 'Times New Roman', serif;
+
+  /* === 字体大小 === */
+  /* Font Sizes */
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 30px;
+  --font-size-4xl: 36px;
+  --font-size-5xl: 48px;
+
+  /* === 字体权重 === */
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* === 行高 === */
+  /* Line Heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  --line-height-loose: 2;
+
+  /* === 字间距 === */
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+
+  /* === 标题样式 === */
+  /* Heading Styles */
+  --heading-1: var(--font-size-5xl) / var(--line-height-tight) var(--font-family-sans);
+  --heading-1-weight: var(--font-weight-bold);
+  --heading-1-color: var(--text-primary);
+
+  --heading-2: var(--font-size-4xl) / var(--line-height-tight) var(--font-family-sans);
+  --heading-2-weight: var(--font-weight-bold);
+  --heading-2-color: var(--text-primary);
+
+  --heading-3: var(--font-size-3xl) / var(--line-height-tight) var(--font-family-sans);
+  --heading-3-weight: var(--font-weight-semibold);
+  --heading-3-color: var(--text-primary);
+
+  --heading-4: var(--font-size-2xl) / var(--line-height-tight) var(--font-family-sans);
+  --heading-4-weight: var(--font-weight-semibold);
+  --heading-4-color: var(--text-primary);
+
+  --heading-5: var(--font-size-xl) / var(--line-height-normal) var(--font-family-sans);
+  --heading-5-weight: var(--font-weight-medium);
+  --heading-5-color: var(--text-primary);
+
+  --heading-6: var(--font-size-lg) / var(--line-height-normal) var(--font-family-sans);
+  --heading-6-weight: var(--font-weight-medium);
+  --heading-6-color: var(--text-primary);
+
+  /* === 正文样式 === */
+  /* Body Text Styles */
+  --body-text: var(--font-size-base) / var(--line-height-normal) var(--font-family-sans);
+  --body-text-large: var(--font-size-md) / var(--line-height-relaxed) var(--font-family-sans);
+  --body-text-small: var(--font-size-sm) / var(--line-height-normal) var(--font-family-sans);
+
+  /* === 辅助文本样式 === */
+  /* Helper Text Styles */
+  --helper-text: var(--font-size-sm) / var(--line-height-normal) var(--font-family-sans);
+  --helper-text-color: var(--text-secondary);
+
+  /* === 代码样式 === */
+  /* Code Styles */
+  --code-text: var(--font-size-sm) / var(--line-height-normal) var(--font-family-mono);
+  --code-text-color: var(--color-error-700);
+  --code-background: var(--color-error-50);
+}

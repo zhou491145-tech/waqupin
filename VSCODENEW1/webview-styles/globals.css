@@ -1,0 +1,197 @@
+/* ============================================
+   全局样式入口
+   Global Styles Entry Point
+   ============================================ */
+
+/* 引入所有样式模块 */
+@import url('./colors.css');
+@import url('./typography.css');
+@import url('./spacing.css');
+@import url('./business-colors.css');
+@import url('./animations.css');
+@import url('./components.css');
+@import url('./themes.css');
+
+/* ============================================
+   基础重置
+   Base Reset
+   ============================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================
+   全局基础样式
+   Global Base Styles
+   ============================================ */
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--vscode-editor-foreground);
+  background-color: var(--vscode-editor-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ============================================
+   滚动条样式
+   Scrollbar Styles
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vscode-editor-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: var(--radius-md);
+  border: 2px solid var(--vscode-editor-background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Firefox 滚动条 */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-default) var(--vscode-editor-background);
+}
+
+/* ============================================
+   选中文本样式
+   Selection Styles
+   ============================================ */
+
+::selection {
+  background: var(--color-primary-200);
+  color: var(--text-primary);
+}
+
+::-moz-selection {
+  background: var(--color-primary-200);
+  color: var(--text-primary);
+}
+
+/* ============================================
+   焦点样式
+   Focus Styles
+   ============================================ */
+
+:focus-visible {
+  outline: 2px solid var(--vscode-focusBorder);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ============================================
+   工具类
+   Utility Classes
+   ============================================ */
+
+/* 文本对齐 */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* 文本颜色 */
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-tertiary { color: var(--text-tertiary); }
+.text-disabled { color: var(--text-disabled); }
+
+/* 文本大小 */
+.text-xs { font-size: var(--font-size-xs); }
+.text-sm { font-size: var(--font-size-sm); }
+.text-base { font-size: var(--font-size-base); }
+.text-md { font-size: var(--font-size-md); }
+.text-lg { font-size: var(--font-size-lg); }
+.text-xl { font-size: var(--font-size-xl); }
+.text-2xl { font-size: var(--font-size-2xl); }
+
+/* 字重 */
+.font-normal { font-weight: var(--font-weight-normal); }
+.font-medium { font-weight: var(--font-weight-medium); }
+.font-semibold { font-weight: var(--font-weight-semibold); }
+.font-bold { font-weight: var(--font-weight-bold); }
+
+/* 间距 */
+.m-0 { margin: 0; }
+.mt-1 { margin-top: var(--space-1); }
+.mt-2 { margin-top: var(--space-2); }
+.mt-4 { margin-top: var(--space-4); }
+.mb-1 { margin-bottom: var(--space-1); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-4 { margin-bottom: var(--space-4); }
+
+.p-0 { padding: 0; }
+.p-1 { padding: var(--space-1); }
+.p-2 { padding: var(--space-2); }
+.p-4 { padding: var(--space-4); }
+
+/* 圆角 */
+.rounded-sm { border-radius: var(--radius-sm); }
+.rounded-md { border-radius: var(--radius-md); }
+.rounded-lg { border-radius: var(--radius-lg); }
+.rounded-xl { border-radius: var(--radius-xl); }
+.rounded-full { border-radius: var(--radius-full); }
+
+/* 阴影 */
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+.shadow-xl { box-shadow: var(--shadow-xl); }
+
+/* 渐变背景 */
+.bg-gradient-primary {
+  background: var(--gradient-primary);
+}
+.bg-gradient-success {
+  background: var(--gradient-success);
+}
+.bg-gradient-warning {
+  background: var(--gradient-warning);
+}
+.bg-gradient-dark {
+  background: var(--gradient-dark);
+}
+
+/* ============================================
+   响应式断点
+   Responsive Breakpoints
+   ============================================ */
+
+@media (max-width: 640px) {
+  :root {
+    --font-size-base: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-base: 12px;
+  }
+}

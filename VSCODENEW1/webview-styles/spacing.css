@@ -1,0 +1,141 @@
+/* ============================================
+   间距系统
+   Spacing System
+   ============================================ */
+
+:root {
+  /* === 基础间距 === */
+  /* Base Spacing */
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* === 内边距 === */
+  /* Padding */
+  --padding-xs: var(--space-1);
+  --padding-sm: var(--space-2);
+  --padding-md: var(--space-3);
+  --padding-lg: var(--space-4);
+  --padding-xl: var(--space-5);
+  --padding-2xl: var(--space-6);
+  --padding-3xl: var(--space-8);
+  --padding-4xl: var(--space-10);
+
+  /* === 外边距 === */
+  /* Margin */
+  --margin-xs: var(--space-1);
+  --margin-sm: var(--space-2);
+  --margin-md: var(--space-3);
+  --margin-lg: var(--space-4);
+  --margin-xl: var(--space-5);
+  --margin-2xl: var(--space-6);
+  --margin-3xl: var(--space-8);
+  --margin-4xl: var(--space-10);
+
+  /* === 圆角 === */
+  /* Border Radius */
+  --radius-none: 0;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-3xl: 20px;
+  --radius-full: 9999px;
+
+  /* === 组件间距 === */
+  /* Component Spacing */
+  --section-spacing: var(--space-8);
+  --component-spacing: var(--space-6);
+  --item-spacing: var(--space-4);
+  --text-spacing: var(--space-2);
+
+  /* === 布局间距 === */
+  /* Layout Spacing */
+  --container-padding: var(--space-6);
+  --card-padding: var(--space-5);
+  --form-spacing: var(--space-4);
+  --button-spacing: var(--space-2);
+}
+
+/* ============================================
+   布局系统
+   Layout System
+   ============================================ */
+
+:root {
+  /* === 容器宽度 === */
+  /* Container Widths */
+  --container-xs: 400px;
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+
+  /* === 网格间距 === */
+  /* Grid Gaps */
+  --grid-gap-xs: var(--space-2);
+  --grid-gap-sm: var(--space-3);
+  --grid-gap-md: var(--space-4);
+  --grid-gap-lg: var(--space-6);
+  --grid-gap-xl: var(--space-8);
+
+  /* === 最大宽度 === */
+  /* Max Widths */
+  --max-width-xs: 320px;
+  --max-width-sm: 480px;
+  --max-width-md: 640px;
+  --max-width-lg: 960px;
+  --max-width-xl: 1280px;
+  --max-width-2xl: 1600px;
+  --max-width-full: 100%;
+
+  /* === 层级 === */
+  /* Z-Index */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+}
+
+/* ============================================
+   过渡时间
+   Transition Duration
+   ============================================ */
+
+:root {
+  --duration-instant: 100ms;
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 350ms;
+  --duration-slower: 500ms;
+  --duration-slowest: 750ms;
+}
+
+/* ============================================
+   缓动函数
+   Easing Functions
+   ============================================ */
+
+:root {
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-elastic: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}

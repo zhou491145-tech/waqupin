@@ -1,0 +1,126 @@
+# 源代码和类型定义
+*.ts
+tsconfig.json
+src/
+
+# 测试文件
+test/
+tests/
+test-*.js
+*.test.ts
+**/test/
+**/tests/
+
+# 文档
+docs/
+*.md
+!README.md
+
+# 官网与服务端（不打包进 VSIX）
+web/
+license-server/
+
+# 日志和缓存
+test-logs/
+*.log
+
+# 开发配置
+.codebuddy/
+.vscode/
+.eslintrc*
+.env
+*.env
+config.json
+secret.json
+
+# 项目数据文件（不包含在插件中）
+.novel-assistant/
+.插件配置/
+.创作上下文/
+test-data/
+
+# 历史离线激活工具（已停用，不应随 VSIX 分发）
+激活码生成.html
+激活码生成.bat
+
+# 其他临时文件
+package.vsix
+novel-assistant-*.vsix
+ai-novel-writing-system-*.vsix
+*.zip
+
+# 示例和模板
+templates/
+
+# 测试构建产物（避免把旧离线测试/说明打包进去）
+out/tests/
+
+# 临时测试文件
+test-import.js
+test-logger.js
+testCharacterManagement.js
+testCharacterModification.js
+
+# 项目文档
+HANDOVER_DOCUMENT.md
+VSCode 小说创作助手插件 - 开发计划.MD
+
+# 中文文件夹
+🎭 伏笔看板/
+📚 资料库/
+📦 导出/
+
+# 其他历史/备份目录
+AAA/
+novel-helper/
+BAK/
+
+# 网站临时文件
+web_*/
+web_*.tar.gz
+
+# package-lock 不需要打包，但 node_modules 必须包含
+package-lock.json
+
+# 部署脚本
+deploy-*.bat
+deploy-*.sh
+upload-*.bat
+upload-*.sh
+restart-*.bat
+restart-*.sh
+setup-*.sh
+baota-*.bat
+nginx-config.conf
+
+# 图标转换脚本
+convert_icon.py
+generate_icon.py
+use_original_icon.py
+
+# 构建脚本
+build.bat
+build-*.bat
+build-*.ps1
+build-versions.js
+rebuild.bat
+simple-build.ps1
+auto-deploy.bat
+run-refining-tests.ps1
+
+# 安全检查脚本
+security-check.js
+
+# 旧的配置文件
+package-basic.json
+
+# 其他不必要的文件
+222.png
+.gitignore
+.vsixignore
+
+
+# ��ʱ����ļ�
+temp_vsix/
+temp_vsix_check/
+diagnose*.ps1

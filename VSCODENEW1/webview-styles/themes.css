@@ -1,0 +1,246 @@
+/* ============================================
+   主题样式
+   Theme Styles
+   ============================================ */
+
+/* ============================================
+   玻璃拟态效果
+   Glassmorphism Effects
+   ============================================ */
+
+.glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================
+   页面主题
+   Page Themes
+   ============================================ */
+
+/* 导航面板主题 */
+.theme-navigator {
+  --theme-primary: var(--module-nav-primary);
+  --theme-secondary: var(--module-nav-secondary);
+  --theme-gradient: linear-gradient(135deg, var(--module-nav-primary) 0%, var(--module-nav-secondary) 100%);
+}
+
+/* 创作中心主题 */
+.theme-creation {
+  --theme-primary: var(--module-creation-primary);
+  --theme-secondary: var(--module-creation-secondary);
+  --theme-gradient: linear-gradient(135deg, var(--module-creation-primary) 0%, var(--module-creation-secondary) 100%);
+}
+
+/* 核心管理主题 */
+.theme-core {
+  --theme-primary: var(--module-core-primary);
+  --theme-secondary: var(--module-core-secondary);
+  --theme-gradient: linear-gradient(135deg, var(--module-core-primary) 0%, var(--module-core-secondary) 100%);
+}
+
+/* 项目数据主题 */
+.theme-data {
+  --theme-primary: var(--module-data-primary);
+  --theme-secondary: var(--module-data-secondary);
+  --theme-gradient: linear-gradient(135deg, var(--module-data-primary) 0%, var(--module-data-secondary) 100%);
+}
+
+/* 配置主题 */
+.theme-config {
+  --theme-primary: var(--module-config-primary);
+  --theme-secondary: var(--module-config-secondary);
+  --theme-gradient: linear-gradient(135deg, var(--module-config-primary) 0%, var(--module-config-secondary) 100%);
+}
+
+/* ============================================
+   卡片主题
+   Card Themes
+   ============================================ */
+
+.card-theme-creation {
+  border-left: 4px solid var(--module-creation-primary);
+}
+
+.card-theme-core {
+  border-left: 4px solid var(--module-core-primary);
+}
+
+.card-theme-data {
+  border-left: 4px solid var(--module-data-primary);
+}
+
+.card-theme-config {
+  border-left: 4px solid var(--module-config-primary);
+}
+
+/* ============================================
+   渐变背景
+   Gradient Backgrounds
+   ============================================ */
+
+.bg-gradient-creation {
+  background: linear-gradient(135deg, var(--module-creation-primary) 0%, var(--module-creation-secondary) 100%);
+}
+
+.bg-gradient-core {
+  background: linear-gradient(135deg, var(--module-core-primary) 0%, var(--module-core-secondary) 100%);
+}
+
+.bg-gradient-data {
+  background: linear-gradient(135deg, var(--module-data-primary) 0%, var(--module-data-secondary) 100%);
+}
+
+.bg-gradient-config {
+  background: linear-gradient(135deg, var(--module-config-primary) 0%, var(--module-config-secondary) 100%);
+}
+
+/* ============================================
+   发光效果
+   Glow Effects
+   ============================================ */
+
+.glow-primary {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+}
+
+.glow-secondary {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+}
+
+.glow-success {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+.glow-warning {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+.glow-error {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+}
+
+/* ============================================
+   边框发光
+   Border Glow
+   ============================================ */
+
+.border-glow-primary {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+.border-glow-success {
+  border-color: var(--color-success);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+.border-glow-warning {
+  border-color: var(--color-warning);
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+.border-glow-error {
+  border-color: var(--color-error);
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}
+
+/* ============================================
+   悬停效果集合
+   Hover Effects Collection
+   ============================================ */
+
+.hover-effect-card {
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.hover-effect-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-primary);
+}
+
+.hover-effect-button {
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.hover-effect-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.hover-effect-lift {
+  transition: transform var(--duration-fast) var(--ease-out), box-shadow var(--duration-fast) var(--ease-out);
+}
+
+.hover-effect-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ============================================
+   动画效果集合
+   Animation Effects Collection
+   ============================================ */
+
+/* 页面加载动画 */
+.page-enter {
+  animation: fadeInUp var(--duration-slow) var(--ease-out);
+}
+
+/* 列表项动画 */
+.list-item-enter {
+  animation: fadeInLeft var(--duration-normal) var(--ease-out);
+}
+
+.list-item-enter:nth-child(1) { animation-delay: 0ms; }
+.list-item-enter:nth-child(2) { animation-delay: 50ms; }
+.list-item-enter:nth-child(3) { animation-delay: 100ms; }
+.list-item-enter:nth-child(4) { animation-delay: 150ms; }
+.list-item-enter:nth-child(5) { animation-delay: 200ms; }
+
+/* 卡片动画 */
+.card-enter {
+  animation: scaleIn var(--duration-normal) var(--ease-out);
+}
+
+/* ============================================
+   响应式主题
+   Responsive Themes
+   ============================================ */
+
+@media (max-width: 768px) {
+  .card {
+    padding: var(--space-4);
+  }
+
+  .modal {
+    max-width: 95%;
+    max-height: 95%;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .tabs-header {
+    flex-wrap: wrap;
+  }
+}
