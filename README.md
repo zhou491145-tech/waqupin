@@ -1,8 +1,8 @@
 # 小说创作助手
 
- 基于AI的小说创作辅助插件。
-
-官网： https://waqupin.com/
+ 基于AI的小说创作辅助插件。AI驱动的小说创作工具，为网络文学创作者提供从构思到成稿的全流程创作支持。 智能管理世界观/人物/伏笔等设定，自动跟随章节内容升级人物属性和世界观规则, 自动生成章节内容并进行专业润色，助力高效创作。 
+ 开源的是未升级核心层前的代码,可以正常使用,逻辑都在!
+ AI小说创作工具 蛙趣拼文官网： https://waqupin.com/
 
 ## 截图
 
@@ -12,7 +12,8 @@
 ![界面示例2](./images/screenshot2.png)
 ![界面示例3](./images/screenshot3.png)
 
-
+微软扩展市场 https://marketplace.visualstudio.com/items?itemName=zhou491145.ai-novel-writing-system
+openvsx市场 https://open-vsx.org/extension/zhou491145/ai-novel-writing-system
 
 特色详解
 
